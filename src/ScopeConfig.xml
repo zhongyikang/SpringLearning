@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="xiaoliu" class="com.example1.scope.Person">
+        <property name="name" value="liu"></property>
+    </bean>
+
+        <!-- 手动设置scope， 让返回的对象非单例   -->
+    <bean id="zhong" class="com.example1.scope.Person" scope="prototype">
+        <property name="name" value="zhong"></property>
+    </bean>
+</beans>
